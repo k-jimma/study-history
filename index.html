@@ -1,24 +1,194 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Site</title>
+    <meta name="description" content="これは練習用サイトです。">
+
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="./styles/Normalize.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6ee9b16ce1.js" crossorigin="anonymous"></script>
+
+    <!-- MyStyles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
+    <header class="header">
+        <div class="header-logo">
+            <img class="header-logo-img" src="images/image-logo.svg" alt="logo">
+            <span class="header-logo-title">Study Site</span>
+        </div>
+        <div class="header-nav">
+            <ul class="header-nav-menu">
+                <li class="header-nav-menu-item"><a href="">Home</a></li>
+                <li class="header-nav-menu-item"><a href="">Works</a></li>
+                <li class="header-nav-menu-item"><a href="">About</a></li>
+                <li class="header-nav-menu-item"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main-hero">
+            <div class="container">
+                <div class="main-hero-highlight">
+                    <h1>皆さんこんにちは<strong>じん</strong>です。<br>このサイトは<strong>WEBエンジニア</strong>になるための練習サイトです。</h1>
+                    <div class="main-hero-highlight-links">
+                        <p>このポートフォリオサイトは練習用です。</p>
+                        <ul class="social-links">
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-linkwdin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <i class="fab fa-x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <figure class="main-hero-img">
+                    <img src="./images/18680-240615-007.jpg" alt="profile">
+                </figure>
+            </div>
+        </section>
+        <section class="main-works">
+            <h2><i class="fas fa-palette"></i>Works</h2>
+            <div class="container">
+                <div class="main-works-item">
+                    <figure class="main-works-item-img primary">
+                        <img src="./images/dogs.png" alt="Work A">
+                    </figure>
+                    <div class="main-works-item-text">
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="main-works-item">
+                    <figure class="main-works-item-img secondary">
+                        <img src="./images/birds.png" alt="Work B">
+                    </figure>
+                    <div class="main-works-item-text">
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-about">
+            <h2></h2>
+            <figure class="main-about-img"></figure>
+            <div class="container"></div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <h1>JIN Study</h1>
+    <header>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </header>
     <h2>自己紹介</h2>
     <p>
-        未経験エンジニアとしてエンジニア転職を目指す<span class="red-text">じん</span>と申します。<br>
+        未経験エンジニアとしてエンジニア転職を目指す<span>じん</span>と申します。<br>
         このサイトを通して勉強を進めていきます。
     </p>
     <h2>WEBサイトの作り方とは？</h2>
     <h3>学ぶべきプログラミング言語</h3>
-    <table border>
+    <table>
         <tr>
             <th>プログラミング言語</th>
             <th>役割</th>
             <th>特徴</th>
         </tr>
-        <tr align="center">
+        <tr>
             <td>HTML</td>
             <td>Webページの「骨組み」を作る言語</td>
             <td>
@@ -29,7 +199,7 @@
                 </ul>
             </td>
         </tr>
-        <tr align="center">
+        <tr>
             <td>CSS</td>
             <td>Webページの「見た目・デザイン」を指定する言語</td>
             <td>
@@ -41,7 +211,7 @@
                 </ul>
             </td>
         </tr>
-        <tr align="center">
+        <tr>
             <td>JavaScript</td>
             <td>Webページに「動き・機能」を追加する言語</td>
             <td>
@@ -56,6 +226,16 @@
     </table>
     <h2>趣味</h2>
     <a href="https://genshin.hoyoverse.com/ja" target="_blank" rel="noopener noreferrer">原神</a>
+
+    <div id="special-offer">
+        <h2>今月の特別オファー</h2>
+        <p>限定商品を特別価格でご提供！</p>
+    </div>
+
+
+
+
+
     <h2>SNS</h2>
     <a href="https://x.com/jin_webstudy" target="_blank" rel="noopener noreferrer"><img src="icons8-ツイッターx-50.png" alt="Xアイコン"></a>
     <h2>お問い合わせ</h2>
@@ -87,8 +267,12 @@
     </form>
     <button type="submit">クリック可能</button>
     <button type="submit" disabled>クリック不可</button>
-</body>
-<footer>
 
-</footer>
+    <input type="text" class="input-field">
+    <button type="submit" class="submit-button">送信</button>
+
+
+
+</body>
+
 </html>
