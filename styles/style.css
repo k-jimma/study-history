@@ -1,44 +1,237 @@
-.navigation {
-    list-style-type: none;
+/* DefaultStyling */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #3a4454;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Piazzolla", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    line-height: 1.4;
+}
+
+h2, h3 {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
-.navigation li {
-    display: inline;
-    margin-right: 10px;
+p {
+    line-height: 1.8;
 }
 
-.navigation a {
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
     text-decoration: none;
-    color: black;
 }
 
-
-#special-offer {
-    background-color: yellow;
-    padding: 20px;
-    border-radius: 5px;
+a, input, textarea {
+    transition: all 0.15s ease-in-out;
 }
 
-#special-offer h2 {
-    color: red;
-}
-
-
-.input-field {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 8px 15px;
-    width: 200px;
-}
-
-.submit-button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 15px;
+input[type="submit"]:hover {
     cursor: pointer;
 }
 
 
+/* Reusable Classes */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.button-primary,
+.button-secondary {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff7f7;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: #53687e;
+}
+
+.button-secondary {
+    background: #6b4e71;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #495b6f;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    background: #5d4462;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+.social-links li + li {
+    margin-left: 20px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #6b4e71;
+    color: #fff7f7;
+    font-family: "Piazzolla", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-weight: 700;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-img {
+    width: 80px;
+}
+
+.header-nav-menu {
+    display: flex;
+}
+
+.header-nav-menu-item > a {
+    color: #fff7f7;
+}
+
+.header-nav-menu-item > a:hover,
+.header-nav-menu-item > a:focus {
+    color: #ffc4c4;
+}
+
+/* Main - Hero */
+
+.main-hero {
+    background-color: #6b4e71;
+}
+
+.main-hero-highlight,
+.main-hero-highlight-links a {
+    color: #fff7f7;
+}
+
+.main-hero-highlight-links p {
+    font-size: 1.2rem;
+}
+
+.main-hero-highlight-links p > a {
+    text-decoration: underline;
+}
+
+.main-hero-highlight-links a:hover,
+.main-hero-highlight-links a:focus {
+    color: #ffc4c4;
+}
+
+/* Main - Works */
+
+.main-works {
+    background-color: #fff7f7;
+}
+
+.main-works-item:last-child {
+    margin-bottom: 0;
+}
+
+.main-works-item-img img {
+    border-radius: 5px;
+}
+
+.main-works-item-img.primary img {
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #53687e ;
+}
+
+.main-works-item-img.secondary img {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #6b4e71;
+}
+
+/* Main - About */
+
+.main-about {
+    background-color: #FFF;
+}
+
+.main-about-addition-skills ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.main-about-addition-follow a {
+    color: #c2b2b4;
+}
+
+.main-about-addition-follow a:hover,
+.main-about-addition-follow a:focus {
+    color: #ab9698;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #3a4454;
+    color: #fff7f7;
+}
+
+.footer-form form,
+.footer-form-input,
+.footer-form-textarea {
+    width: 100%;
+}
+
+.footer-form-input input,
+.footer-form-textarea textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #c2b2b4;
+    border-radius: 5px;
+    color: #fff7f7;
+}
