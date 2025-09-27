@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* DefaultStyling */
 
 *, *::before, *::after {
@@ -107,8 +109,26 @@ input[type="submit"]:hover {
     font-size: 2rem;
 }
 
-.social-links li + li {
-    margin-left: 20px;
+.grid-col-2 > .grid-item {
+    width: 50%;
+    max-width: 200px;
+}
+
+.grid-col-3 > .grid-item {
+    width: 33.3%;
+}
+
+.grid-col-4 > .grid-item {
+    width: 25%;
+}
+
+.grid-col-5 > .grid-item {
+    width: 20%;
+}
+
+.grid-col-6 > .grid-item {
+    width: 16.6%;
+    max-width: 50px;
 }
 
 /* Header */
@@ -227,6 +247,27 @@ input[type="submit"]:hover {
     width: 100%;
 }
 
+.footer-form-input {
+    position: relative;
+}
+
+.footer-form-input i {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: #fff7f7;
+}
+
+.footer-form-input input{
+    padding: 10px 15px 10px 40px;
+}
+
+.footer-form-textarea textarea {
+    height: 150px;
+    padding: 10px 15px;
+    resize: none;
+}
+
 .footer-form-input input,
 .footer-form-textarea textarea {
     width: 100%;
@@ -234,4 +275,51 @@ input[type="submit"]:hover {
     border: 1px solid #c2b2b4;
     border-radius: 5px;
     color: #fff7f7;
+}
+
+.footer-form-input input::placeholder,
+.footer-form-textarea textarea::placeholder {
+    color: #9c9da5;
+}
+
+.footer-form-input input:hover,
+.footer-form-input input:focus,
+.footer-form-textarea textarea:hover,
+.footer-form-textarea textarea:focus {
+    background: rgba(0, 0, 0, 10%);
+}
+
+.footer-form-input input:focus-visible,
+.footer-form-textarea textarea:focus-visible {
+    outline: 1px solid #c2b2b4;
+    border: 1px solid #c2b2b4;
+}
+
+.footer-info-nav-menu ul {
+    font-family: "Piazzolla", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.footer-info-nav-menu a {
+    color: #fff7f7;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-info-nav-menu a:hover,
+.footer-info-nav-menu a:focus {
+    color: #9c9da5;
+}
+
+.footer-info-follow a {
+    color: #9c9da5;
+    font-size: 1.5rem;
+}
+
+.footer-info-follow a:hover,
+.footer-info-follow a:focus {
+    color: #81838d;
+}
+
+.footer-info-copy {
+    color: #9c9da5;
 }
